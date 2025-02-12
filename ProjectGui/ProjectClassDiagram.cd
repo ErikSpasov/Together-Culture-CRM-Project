@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="ProjectGui.HomePage">
+    <Position X="4" Y="3.25" Width="3.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAgABAAAACAAAAAIAACEBAACCAAAAgAAAAAQAABEAAA=</HashCode>
+      <FileName>HomePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.InsertDB">
+    <Position X="8.25" Y="4.75" Width="6" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAACAA=</HashCode>
+      <FileName>InsertDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.registerPage" Collapsed="true">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>9JAgEAEwACAUABAgAASEiAECDBwgBAgACEIASQAEEgA=</HashCode>
+      <FileName>registerpage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.GuestRegister" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EgAAEAAYECAAABAAAACABAACAAAAAAIAAECACQAAgAA=</HashCode>
+      <FileName>GuestRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Guest_Page" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAGAAAAAACACAAAACACIAAAAAAGgAAAAABAA=</HashCode>
+      <FileName>Guest_Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.ProjectDBConnection">
+    <Position X="17" Y="0.75" Width="8.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAUAAAACAQAAAAAQAAAAAAAAAEAAAAAAAAgIAAAAAA=</HashCode>
+      <FileName>ProjectDBConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Program">
+    <Position X="14" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.PasswordHasher" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAICAACAAIAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>PasswordHasher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Payment_Page" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>SAAAAIQCACAAAiAACQSAAAACAAQEAKAAAACAABCBAAA=</HashCode>
+      <FileName>Payment_Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Online_Modules" Collapsed="true">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABAAYgICAggAAACQyAAgACAESAIAIEQBAAAABAAAA=</HashCode>
+      <FileName>Online_Modules.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.MembershipAdmin" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MembershipAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Interest">
+    <Position X="2.75" Y="9.25" Width="3.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>MBAAAAAQACAAABAAAACAEAACAMA5AAAAAEAECQAAAAA=</HashCode>
+      <FileName>Interest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Dataset_Manipulator">
+    <Position X="17.5" Y="7.5" Width="5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgAGAAAABAAAAACAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dataset_Manipulator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Creative_Workspace_Membership" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAACQSBAAICAAAAAABAAAAAQAAAAAA=</HashCode>
+      <FileName>Creative_Workspace_Membership.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Creative_Workspace_Events" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEISCCkBIASQaAAAACAAQAYBAQgEAAAABACEQ=</HashCode>
+      <FileName>Creative_Workspace_Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Creative_Workspace_Dashboard" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAQAAAAGQDAAAAGAAAAAADAAEiAAAAQBAA=</HashCode>
+      <FileName>Creative_Workspace_Dashboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Creative_Workspace_Benefits" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAIAAACQSAAAACAAAgAABIAQAAAIAACAA=</HashCode>
+      <FileName>Creative_Workspace_Benefits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Constants">
+    <Position X="9" Y="7.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>gCAIAAAFAoAAaqBAQAkAAAAEIAAAAAEEEQCAAQgBYAA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Community_Members" Collapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABEQEEAGAAgAAACACAAAACRAQABAAAEAgAAQAFAAA=</HashCode>
+      <FileName>Community_Members.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Admin_User_Overview" Collapsed="true">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAMAgiAAExEQCASABAACAAAQCAAAAABACAAQCAE=</HashCode>
+      <FileName>Admin_User_Overview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Admin_User_Operations" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAALAAAAACAAAwAACACAAAACIAALQQAAgEABAAAACAA=</HashCode>
+      <FileName>Admin_User_Operations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectGui.Admin_Action_Logger" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAQAAAAAAAAAAAAAAAAAAACAAAACQQAAAACAAAA=</HashCode>
+      <FileName>Admin_Action_Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="13" Y="7.5" Width="3.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="7" Y="15" Width="4.25" />
+    <NestedTypes>
+      <Class Name="System.Windows.Forms.Form.ControlCollection" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

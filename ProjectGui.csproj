@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E0BC7B4-EFE6-41C3-A85C-E85D5D39FD4F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectGui</RootNamespace>
+    <AssemblyName>ProjectGui</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Action_Logger.cs" />
+    <Compile Include="Admin_User_Operations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_User_Operations.Designer.cs">
+      <DependentUpon>Admin_User_Operations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_User_Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_User_Overview.Designer.cs">
+      <DependentUpon>Admin_User_Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Community_Members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Community_Members.Designer.cs">
+      <DependentUpon>Community_Members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Creative_Workspace_Benefits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creative_Workspace_Benefits.Designer.cs">
+      <DependentUpon>Creative_Workspace_Benefits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creative_Workspace_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creative_Workspace_Dashboard.Designer.cs">
+      <DependentUpon>Creative_Workspace_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creative_Workspace_Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creative_Workspace_Events.Designer.cs">
+      <DependentUpon>Creative_Workspace_Events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creative_Workspace_Membership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creative_Workspace_Membership.Designer.cs">
+      <DependentUpon>Creative_Workspace_Membership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset_Manipulator.cs" />
+    <Compile Include="GuestRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestRegister.Designer.cs">
+      <DependentUpon>GuestRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertDB.cs" />
+    <Compile Include="Interest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interest.Designer.cs">
+      <DependentUpon>Interest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembershipAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembershipAdmin.Designer.cs">
+      <DependentUpon>MembershipAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Online_Modules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Online_Modules.Designer.cs">
+      <DependentUpon>Online_Modules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordHasher.cs" />
+    <Compile Include="ProjectDBConnection.cs" />
+    <Compile Include="Guest_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest_Page.Designer.cs">
+      <DependentUpon>Guest_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_Page.Designer.cs">
+      <DependentUpon>Payment_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerpage.Designer.cs">
+      <DependentUpon>registerpage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_User_Operations.resx">
+      <DependentUpon>Admin_User_Operations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_User_Overview.resx">
+      <DependentUpon>Admin_User_Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Community_Members.resx">
+      <DependentUpon>Community_Members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creative_Workspace_Benefits.resx">
+      <DependentUpon>Creative_Workspace_Benefits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creative_Workspace_Dashboard.resx">
+      <DependentUpon>Creative_Workspace_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creative_Workspace_Events.resx">
+      <DependentUpon>Creative_Workspace_Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creative_Workspace_Membership.resx">
+      <DependentUpon>Creative_Workspace_Membership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestRegister.resx">
+      <DependentUpon>GuestRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest_Page.resx">
+      <DependentUpon>Guest_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interest.resx">
+      <DependentUpon>Interest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembershipAdmin.resx">
+      <DependentUpon>MembershipAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Community_Members.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Creative_Workspace_Benefits.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Creative_Workspace_Dashboard.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Creative_Workspace_Events.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Creative_Workspace_Membership.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.GuestRegister.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Guest_Page.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.HomePage.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Interest.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.MembershipAdmin.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Online_Modules.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Payment_Page.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectGui.registerpage.resources" />
+    <EmbeddedResource Include="Online_Modules.resx">
+      <DependentUpon>Online_Modules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Page.resx">
+      <DependentUpon>Payment_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="registerpage.resx">
+      <DependentUpon>registerpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".vs\ProjectGui.csproj.dtbcache.json" />
+    <None Include=".vs\ProjectGui\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\ProjectGui\FileContentIndex\45a52110-f3e3-43c3-ae66-ef08975e4bb6.vsidx" />
+    <None Include=".vs\ProjectGui\FileContentIndex\7aa357e8-8a62-409d-ba69-d11c12ce7dd8.vsidx" />
+    <None Include=".vs\ProjectGui\FileContentIndex\98ac89fb-daa5-41a9-8e90-1f9d95b80d18.vsidx" />
+    <None Include=".vs\ProjectGui\FileContentIndex\b4eaa5dc-3ba0-4fca-bbc4-41ed5427dbbc.vsidx" />
+    <None Include=".vs\ProjectGui\FileContentIndex\cf6bf5e9-36b0-4ca5-9677-b40e4c4531e5.vsidx" />
+    <None Include=".vs\ProjectGui\v17\.futdcache.v2" />
+    <None Include=".vs\ProjectGui\v17\.wsuo" />
+    <None Include=".vs\ProjectGui\v17\DocumentLayout.backup.json" />
+    <None Include=".vs\ProjectGui\v17\DocumentLayout.json" />
+    <None Include=".vs\ProjectGui\v17\ResourceExplorer\settings.json" />
+    <None Include=".vs\ProjectGui\v17\TestStore\0\001.testlog" />
+    <None Include=".vs\ProjectGui\v17\TestStore\0\testlog.manifest" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="bin\Debug\ProjectGui.exe.config" />
+    <None Include="MemberBenefitsDashboard.csproj" />
+    <None Include="MemberInformation.csproj" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ProjectGui.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\ProjectGui.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\ProjectGui.csproj.GenerateResource.cache" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\.signature.p7s" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\net45\MSTest.TestAdapter.props" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\net45\MSTest.TestAdapter.targets" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.props" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.targets" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\MSTest.TestAdapter.props" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\MSTest.TestAdapter.targets" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\MSTest.TestAdapter.props" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\MSTest.TestAdapter.props" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\MSTest.TestAdapter.props" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\MSTest.TestAdapter.targets" />
+    <None Include="packages\MSTest.TestAdapter.2.2.10\MSTest.TestAdapter.2.2.10.nupkg" />
+    <None Include="packages\MSTest.TestFramework.2.2.10\.signature.p7s" />
+    <None Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\MSTest.TestFramework.targets" />
+    <None Include="packages\MSTest.TestFramework.2.2.10\MSTest.TestFramework.2.2.10.nupkg" />
+    <None Include="ProjectClassDiagram.cd" />
+    <None Include="ProjectDBDataSet.xsc">
+      <DependentUpon>ProjectDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectDBDataSet.xss">
+      <DependentUpon>ProjectDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDBDataSet1.xsc">
+      <DependentUpon>ProjectDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectDBDataSet1.xss">
+      <DependentUpon>ProjectDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Events_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\ProjectDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\ProjectDB_log.ldf">
+      <DependentUpon>ProjectDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\ProjectGui.exe" />
+    <Content Include="bin\Debug\ProjectGui.pdb" />
+    <Content Include="Events_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="obj\Debug\ProjectGui.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ProjectGui.exe" />
+    <Content Include="obj\Debug\ProjectGui.pdb" />
+    <Content Include="obj\Debug\TempPE\ProjectDBDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\cs\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\de\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\fr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\it\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\ja\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\ko\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\Microsoft.TestPlatform.AdapterUtilities.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\pl\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\pt-BR\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\tr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\zh-Hans\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net45\zh-Hant\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\cs\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\de\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\fr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\it\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\ja\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\ko\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\Microsoft.TestPlatform.AdapterUtilities.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\pl\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\pt-BR\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\tr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\zh-Hans\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net46\zh-Hant\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\cs\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\de\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\fr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\it\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\ja\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\ko\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\pl\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\pt-BR\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\tr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\winui\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\zh-Hans\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\net5.0\zh-Hant\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\cs\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\de\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\fr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\it\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\ja\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\ko\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\Microsoft.TestPlatform.AdapterUtilities.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\pl\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\pt-BR\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\tr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\zh-Hans\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netcoreapp1.0\zh-Hant\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\cs\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\de\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\fr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\it\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\ja\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\ko\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\Microsoft.TestPlatform.AdapterUtilities.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\pl\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\pt-BR\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\tr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\zh-Hans\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\netstandard1.5\zh-Hant\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\cs\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\de\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\fr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\it\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\ja\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\ko\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\Microsoft.TestPlatform.AdapterUtilities.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\pl\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\pt-BR\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\tr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\zh-Hans\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\uap10.0\zh-Hant\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\cs\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\cs\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\cs\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\de\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\de\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\de\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\de\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\es\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\fr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\fr\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\fr\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\it\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\it\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\it\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\it\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ja\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ja\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ja\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ko\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ko\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ko\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\Microsoft.TestPlatform.AdapterUtilities.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\Microsoft.VisualStudio.TestPlatform.TestFramework.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pl\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pl\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pl\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pt-BR\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pt-BR\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pt-BR\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\tr\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\tr\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\tr\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hans\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hant\Microsoft.TestPlatform.AdapterUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\build\_common\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" />
+    <Content Include="packages\MSTest.TestAdapter.2.2.10\Icon.png" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\de\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\es\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\it\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\winui\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\winui\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\build\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\Icon.png" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\de\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\de\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\es\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\es\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\it\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\it\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net45\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\de\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\es\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\it\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\Microsoft.VisualStudio.TestPlatform.TestFramework.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\de\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\de\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\es\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\es\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\it\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\it\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\Microsoft.VisualStudio.TestPlatform.TestFramework.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\netstandard1.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\de\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\de\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\es\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\es\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\it\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\it\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\Microsoft.VisualStudio.TestPlatform.TestFramework.XML" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
+    <Content Include="packages\MSTest.TestFramework.2.2.10\lib\uap10.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
+    <Content Include="ProjectDB.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProjectDB_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>ProjectDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\image-asset.jpeg" />
+    <None Include="Resources\TC_Logos-01.png" />
+    <None Include="Resources\togetherculture.cambridge.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
