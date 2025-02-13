@@ -1,10 +1,10 @@
 # Together Culture CRM Project (Shared Group Project)
 
 Personal work on the Project:
-Home Page
-Guest Page
-Register Page
-Online Modules Page
+Home Page, 
+Guest Page, 
+Register Page, 
+Online Modules Page, 
 Database Design
 
 ===========================================================
