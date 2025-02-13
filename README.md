@@ -7,7 +7,7 @@ Register Page,
 Online Modules Page, 
 Database Design
 
-===========================================================
+
 Overview
 This project is a C# application designed to manage user authentication and event or digital content module bookings.
 It allows members to log in, access member-only content,and book digital modules and events.
