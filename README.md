@@ -9,6 +9,7 @@ Database Design
 
 
 Overview
+
 This project is a C# application designed to manage user authentication and event or digital content module bookings.
 It allows members to log in, access member-only content,and book digital modules and events.
 The system is built with object-oriented programming principles and database connectivity.
